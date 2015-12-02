@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoCell" id="gTV-IL-0wX" customClass="VedioViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66V-Qe-yLc">
+                        <rect key="frame" x="10" y="10" width="300" height="30"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ag8-gm-EsP">
+                        <rect key="frame" x="10" y="48" width="300" height="23"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.67497200812597247" green="0.69406092359320393" blue="0.74903330180000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSV-mp-QDY">
+                        <rect key="frame" x="10" y="268" width="65" height="16"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="0A2-yq-viY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="Button" image="video_list_cell_time">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeZ-Ih-UB1">
+                        <rect key="frame" x="85" y="268" width="70" height="16"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="V1v-9t-BfR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" image="video_list_cell_icon">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKa-hH-c1i">
+                        <rect key="frame" x="277" y="258" width="33" height="33"/>
+                        <animations/>
+                        <state key="normal" backgroundImage="video_category_share"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2Z-ak-4Ct">
+                        <rect key="frame" x="10" y="68" width="300" height="180"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="Yez-yy-jOi"/>
+                        </constraints>
+                        <connections>
+                            <action selector="playVideo:" destination="gTV-IL-0wX" eventType="touchUpInside" id="K58-6b-TsG"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contentview_play" translatesAutoresizingMaskIntoConstraints="NO" id="hgx-0P-iLl">
+                        <rect key="frame" x="135" y="133" width="50" height="50"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Bu7-V0-eJZ"/>
+                            <constraint firstAttribute="width" constant="50" id="ryg-Sx-6vp"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUJ-hS-Roc">
+                        <rect key="frame" x="176" y="257" width="81" height="33"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="2VU-mO-fJo"/>
+                        </constraints>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="32" maxY="0.0"/>
+                        <state key="normal" title="1000" backgroundImage="video_category_comment">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hgx-0P-iLl" firstAttribute="centerY" secondItem="D2Z-ak-4Ct" secondAttribute="centerY" id="4eR-51-azc"/>
+                <constraint firstItem="66V-Qe-yLc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="7gs-uA-7I3"/>
+                <constraint firstAttribute="trailing" secondItem="D2Z-ak-4Ct" secondAttribute="trailing" constant="10" id="ABf-M6-fvX"/>
+                <constraint firstItem="DSV-mp-QDY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="AiZ-jC-QQb"/>
+                <constraint firstItem="66V-Qe-yLc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="BCu-3a-dsL"/>
+                <constraint firstAttribute="trailing" secondItem="66V-Qe-yLc" secondAttribute="trailing" constant="10" id="E7A-Fk-xPG"/>
+                <constraint firstItem="Ag8-gm-EsP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="IVl-JB-rIG"/>
+                <constraint firstItem="Ag8-gm-EsP" firstAttribute="top" secondItem="66V-Qe-yLc" secondAttribute="bottom" constant="8" id="Kaj-6E-dD9"/>
+                <constraint firstItem="gUJ-hS-Roc" firstAttribute="top" secondItem="D2Z-ak-4Ct" secondAttribute="bottom" constant="10" id="O7H-Bv-SgV"/>
+                <constraint firstAttribute="trailing" secondItem="lKa-hH-c1i" secondAttribute="trailing" constant="10" id="a6q-IJ-HE6"/>
+                <constraint firstItem="lKa-hH-c1i" firstAttribute="leading" secondItem="gUJ-hS-Roc" secondAttribute="trailing" constant="20" id="abM-fG-kSo"/>
+                <constraint firstItem="D2Z-ak-4Ct" firstAttribute="top" secondItem="Ag8-gm-EsP" secondAttribute="bottom" constant="8" id="dFn-gp-ugB"/>
+                <constraint firstItem="GeZ-Ih-UB1" firstAttribute="top" secondItem="D2Z-ak-4Ct" secondAttribute="bottom" constant="20" id="gXo-sk-eNm"/>
+                <constraint firstItem="lKa-hH-c1i" firstAttribute="top" secondItem="D2Z-ak-4Ct" secondAttribute="bottom" constant="10" id="ikv-4o-tcI"/>
+                <constraint firstItem="DSV-mp-QDY" firstAttribute="top" secondItem="D2Z-ak-4Ct" secondAttribute="bottom" constant="20" id="kwy-hM-ato"/>
+                <constraint firstAttribute="trailing" secondItem="Ag8-gm-EsP" secondAttribute="trailing" constant="10" id="nh0-wk-Fh7"/>
+                <constraint firstItem="D2Z-ak-4Ct" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="or1-ZH-1cP"/>
+                <constraint firstItem="hgx-0P-iLl" firstAttribute="centerX" secondItem="D2Z-ak-4Ct" secondAttribute="centerX" id="s4J-fc-Bq6"/>
+                <constraint firstItem="GeZ-Ih-UB1" firstAttribute="leading" secondItem="DSV-mp-QDY" secondAttribute="trailing" constant="10" id="sJ3-ty-zO9"/>
+            </constraints>
+            <size key="customSize" width="365" height="88"/>
+            <connections>
+                <outlet property="commentBT" destination="gUJ-hS-Roc" id="62f-g6-sWY"/>
+                <outlet property="desLabel" destination="Ag8-gm-EsP" id="YgX-c7-WLf"/>
+                <outlet property="durationBT" destination="DSV-mp-QDY" id="gku-FY-TQK"/>
+                <outlet property="iconBtn" destination="D2Z-ak-4Ct" id="hHz-0c-J6I"/>
+                <outlet property="playCountBT" destination="GeZ-Ih-UB1" id="iuR-A5-1uD"/>
+                <outlet property="playIV" destination="hgx-0P-iLl" id="Nek-iO-xbW"/>
+                <outlet property="titleLabel" destination="66V-Qe-yLc" id="rF3-lk-hW9"/>
+            </connections>
+            <point key="canvasLocation" x="202" y="279"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="contentview_play" width="50" height="50"/>
+        <image name="video_category_comment" width="68" height="33"/>
+        <image name="video_category_share" width="33" height="33"/>
+        <image name="video_list_cell_icon" width="16" height="16"/>
+        <image name="video_list_cell_time" width="16" height="16"/>
+    </resources>
+</document>
